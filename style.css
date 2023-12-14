@@ -1,0 +1,89 @@
+.judul{
+    font-family: "Poppins", Arial, sans-serif;
+}
+
+.banner {
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('img/banner.jpg');
+    background-size: cover;
+    background-position: left;
+}
+
+.falling-text {
+    position: relative;
+    animation: fall 2s ease-in-out;
+  }
+  
+  @keyframes fall {
+    0% {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-in-right {
+    animation: slideInRight 5s ease-in-out forwards;
+  }
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .slide-in-left {
+    animation: slideInLeft 5s ease-in-out forwards;
+  }
+
+
+  .photo {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .about-section {
+    padding: 60px 0;
+  }
+  .about-img {
+    margin-bottom: 30px;
+  }
+  
+  .social-icons {
+    font-size: 2em; 
+  }
+  .social-icons i {
+    margin-right: 10px; 
+  }
+
+  .fb-icon {
+    color: #1877F2; 
+  }
+  .wa-icon {
+    color: #25D366; 
+  }
+  .ig-icon {
+    background-image: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D); /* Warna Instagram */
+      -webkit-background-clip: text;
+      color: transparent;
+  }
